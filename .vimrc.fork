@@ -1,31 +1,77 @@
 set nofoldenable
 
-UnBundle 'Lokaltog/vim-easymotion'
-UnBundle 'MarcWeber/vim-addon-mw-utils'
-UnBundle 'Puppet-Syntax-Highlighting'
-UnBundle 'Shougo/neocomplcache'
-UnBundle 'airblade/vim-gitgutter'
-UnBundle 'altercation/vim-colors-solarized'
-UnBundle 'flazz/vim-colorschemes'
-UnBundle 'godlygeek/csapprox'
-UnBundle 'godlygeek/tabular'
-UnBundle 'jistr/vim-nerdtree-tabs'
-UnBundle 'klen/python-mode'
-UnBundle 'majutsushi/tagbar'
-UnBundle 'matchit.zip'
-UnBundle 'mattn/gist-vim'
-UnBundle 'mattn/webapi-vim'
-UnBundle 'nathanaelkane/vim-indent-guides'
-UnBundle 'python.vim'
-UnBundle 'python_match.vim'
-UnBundle 'pythoncomplete'
-UnBundle 'quentindecock/vim-cucumber-align-pipes'
-UnBundle 'spf13/vim-autoclose'
-UnBundle 'spf13/vim-preview'
-UnBundle 'terryma/vim-multiple-cursors'
-UnBundle 'tomtom/tlib_vim'
-UnBundle 'tpope/vim-abolish.git'
-UnBundle 'tpope/vim-cucumber'
-UnBundle 'tpope/vim-markdown'
-UnBundle 'tpope/vim-surround'
-UnBundle 'vim-scripts/sessionman.vim'
+" Modeline and Notes {
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker spell:
+" }
+
+" Disable Bundles {{{
+    " So far, none of this plugins have been usuful from spf13 plugin, 
+    " so disable them for now.
+    UnBundle 'Lokaltog/vim-easymotion'
+    UnBundle 'MarcWeber/vim-addon-mw-utils'
+    UnBundle 'Puppet-Syntax-Highlighting'
+    UnBundle 'Shougo/neocomplcache'
+    UnBundle 'airblade/vim-gitgutter'
+    UnBundle 'altercation/vim-colors-solarized'
+    UnBundle 'flazz/vim-colorschemes'
+    UnBundle 'godlygeek/csapprox'
+    UnBundle 'godlygeek/tabular'
+    UnBundle 'jistr/vim-nerdtree-tabs'
+    UnBundle 'klen/python-mode'
+    UnBundle 'majutsushi/tagbar'
+    UnBundle 'matchit.zip'
+    UnBundle 'mattn/gist-vim'
+    UnBundle 'mattn/webapi-vim'
+    UnBundle 'nathanaelkane/vim-indent-guides'
+    UnBundle 'python.vim'
+    UnBundle 'python_match.vim'
+    UnBundle 'pythoncomplete'
+    UnBundle 'quentindecock/vim-cucumber-align-pipes'
+    UnBundle 'spf13/vim-autoclose'
+    UnBundle 'spf13/vim-preview'
+    UnBundle 'terryma/vim-multiple-cursors'
+    UnBundle 'tomtom/tlib_vim'
+    UnBundle 'tpope/vim-abolish.git'
+    UnBundle 'tpope/vim-cucumber'
+    UnBundle 'tpope/vim-markdown'
+    UnBundle 'tpope/vim-surround'
+    UnBundle 'vim-scripts/sessionman.vim'
+
+" }}}
+
+" Key (re)Mappings {{{
+
+    " delete current line in edit mode
+    inoremap <c-d> dd
+
+    " convert current editing word to uppercase
+    inoremap <c-u> <esc>viwUi
+    nnoremap <c-u> viwU
+
+    " quickly modify your .vimrc.fork file
+    nnoremap <leader>ev :vsplit $HOMEPATH/.vimrc.fork<cr>
+
+    " reload vim configuration
+    nnoremap <leader>sv :source $MYVIMRC<cr>
+
+    " easy buffer switching
+    noremap <C-space> <esc>:bnext<cr>
+
+    " easy tab switching
+    noremap <C-tab> <esc>:tabnext<cr>
+
+    " close buffer
+    noremap <leader>cb <esc>:bd<cr>
+
+" }}}
+
+
+" Missing features {{{
+    " Features that I would like to vim to have (ie: plugins)
+    " * easy buffer switching
+    " * tags search (ie: ctags)
+    " * 
+" }}}
+
+" change directory to users home.
+cd $HOMEPATH
