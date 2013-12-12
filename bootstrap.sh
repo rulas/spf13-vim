@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ############################  SETUP PARAMETERS
-app_name='spf13-vim'
+app_name='spf13-rulas-vim'
 git_uri='https://github.com/rulas/spf13-vim.git'
 git_branch='3.0'
 debug_mode='0'
