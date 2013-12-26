@@ -55,6 +55,10 @@ If you have a bash-compatible shell you can run the script directly:
 
 On Windows and \*nix [Git] and [Curl] are required. Also, if you haven't already, you'll need to install [Vim].
 
+### Installing spf13-vim on Windows
+
+The easiest way is to download and run the spf13-vim-windows-install.cmd file. Remember to run this file in **Administrator Mode** if you want the symlinks to be created successfully. Check next section in dependencies are not met.
+
 ### Installing dependencies
 
 #### Install [msysgit]
@@ -92,11 +96,6 @@ to verify all good, run:
     curl 7.21.1 (i686-pc-mingw32) libcurl/7.21.1 OpenSSL/0.9.8k zlib/1.2.3
     Protocols: dict file ftp ftps http https imap imaps ldap ldaps pop3 pop3s rtsp smtp smtps telnet tftp
     Features: Largefile NTLM SSL SSPI libz
-
-
-### Installing spf13-vim on Windows
-
-The easiest way is to download and run the spf13-vim-windows-install.cmd file. Remember to run this file in **Administrator Mode** if you want the symlinks to be created successfully.
 
 ## Updating to the latest version
 The simpliest (and safest) way to update is to simply rerun the installer. It will completely and non destructively upgrade to the latest version.
