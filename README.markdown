@@ -94,7 +94,7 @@ to verify all good, run:
     Features: Largefile NTLM SSL SSPI libz
 
 
-#### Installing spf13-vim on Windows
+### Installing spf13-vim on Windows
 
 The easiest way is to download and run the spf13-vim-windows-install.cmd file. Remember to run this file in **Administrator Mode** if you want the symlinks to be created successfully.
 
